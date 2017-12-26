@@ -1,0 +1,71 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : 아이디찾기_완료","filePath": "../"})
+<body>
+<div class="wrap login">
+    <!-- header_area -->
+    <!--@@include('top.html')-->
+    <!-- //header_area -->
+    <div class="member_heading">
+        <a href="#" class="link">이메일(아이디)찾기</a>
+    </div>
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents">
+            <div class="find_wrap">
+
+                <div class="find__form">
+                    <!-- 휴대폰으로 찾기 체크됨 -->
+                    <div class="find__id-wrap">
+                        <div class="find__select_box">
+                            <input type="radio" class="g_invisible" id="find-id" checked/>
+                            <label class="find__input-phone" for="find-id">휴대전화로 찾기</label>
+                        </div>
+                        <p class="find__id-desc">가입 당시 입력한 휴대전화 번호를 통해 이메일(아이디)를 문자와 함께 확인하세요. </p>
+                    </div>
+                    <!-- //휴대폰으로 찾기 체크됨 -->
+
+                    <!-- 결과보기 -->
+                    <div class="find__form-box">
+                        <div class="find__end">
+                            <div class="title">
+                                <h3 class="heading_h3 al_c">이메일(아이디) 찾기 결과</h3>
+                            </div>
+                            <div class="find__result">
+                                <div class="find__result-wrap">
+                                    <div class="find__result-email">
+                                        <p class="find__result-labeltxt">
+                                            <span class="find__id-desc">2017.12.15 가입</span>
+                                            <span class="find__result-emailtxt">Heung*** @gmail.com</span>
+                                        </p>
+                                    </div>
+                                    <span class="find__result-send">
+                                        <a href="#" class="btn_send">문자 발송</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //결과보기 -->
+
+
+                    <!-- 비밀번호 찾기/로그인 버튼영역 -->
+                    <div class="btn_wrap al_c">
+                        <input class="btn btn-cancel col-md-5" type="button" value="비밀번호 찾기">
+                        <input class="btn btn-primary col-md-5" type="submit" value="로그인">
+                    </div>
+                    <!-- //비밀번호 찾기/로그인 버튼영역 -->
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('footer.html')
+    <!-- //footer_area -->
+</div>
+</body>
+</html>

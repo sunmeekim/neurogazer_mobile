@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.science_spot {
+  width: 100%;
+  min-height: 180px;
+  margin: 0 auto;
+  position: relative;
+  .spot3 {
+    &__img {
+
+      img {
+        width: 100%;
+      }
+    }
+    &__info {
+      position: absolute;
+      left: 0;
+      top: 60px;
+      right: 0;
+      text-align: center;
+    }
+    &__info-tit {
+      font-family: $F-family-en;
+      font-size: 2.1rem;
+      color: $C-white;
+      font-weight: $F-weight-regular;
+      span {
+
+        font-weight: $F-weight-bold;
+      }
+      strong {
+        display: block;
+        padding-bottom: 5px;
+        font-size: $F-size-under;
+        font-weight: $F-weight-bold;
+      }
+    }
+
+  }
+}
+.subtitlebar {
+  &:before {
+    content:'';
+    display: inline-block;
+    vertical-align: top;
+    width:15px;
+    height:3px;
+    margin: 8px 5px 0 0;
+    background: #818e9f;
+  }
+}
+.science_cont1 {
+  position: relative;
+  min-height: 310px;
+  width: 100%;
+  margin: 0 auto;
+  @include clear;
+
+
+  &__stit {
+    position: absolute;
+    left:25px;
+    top:30px;
+    font-family: $F-family-en2;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-under;
+    color: #818e9f;
+
+    @extend .subtitlebar;
+
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+  }
+  &__info {
+   margin: 80px 15px 0 25px;
+  }
+  &__info &__tit {
+    position: relative;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+  }
+  &__info &__txt {
+    margin-top: 30px;
+    font-size: $F-size-under;
+    color: $C-font-basic;
+  }
+}
+.science_cont2 {
+  position:relative;
+  height: 170px;
+  background: $C-black;
+  width: 100%;
+  overflow: hidden;
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 1304px;
+    height: 170px;
+    //@include use-sprite(science_img2, $spr_spot_img, $spr_spot_img_2x);
+    img {
+      height: 170px;
+    }
+  }
+}
+.science_cont3 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  @include clear();
+
+  &__stit {
+    position: absolute;
+    left:25px;
+    top:30px;
+    font-family: $F-family-en2;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-under;
+    color: #818e9f;
+    @extend .subtitlebar;
+    span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+  }
+  &__info {
+    margin: 80px 15px 0 25px;
+  }
+  &__info &__summary {
+    font-family: $F-family-en;
+    color:$C-font-basic;
+    font-size:2.1rem;
+    letter-spacing: -1px;
+  }
+  &__info &__tit {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.1rem;
+    color: #242424;
+    padding-top: 20px;
+    letter-spacing: -1px;
+  }
+
+  &__people {
+    padding-bottom: 50px;
+  }
+  &__people-tit {
+    margin: 30px 25px;
+    font-size: 1.4rem;
+    font-weight: $F-weight-bold;
+  }
+  &__people-img {
+    overflow: hidden;
+    margin-top: 30px;
+    img {
+      width:100%;
+      margin-left: 25px;
+    }
+  }
+  &__people &__people-box {
+    margin:20px 25px;
+    @include clear();
+  }
+  &__people &__people-box2 {
+    padding:20px 25px 0;
+    @include clear();
+  }
+  &__people &__people-label {
+    display: inline-block;
+    vertical-align: top;
+    width: 224px;
+    color: #242424;
+    font-weight: $F-weight-bold;
+  }
+  &__people &__people-slabel {
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    color: $C-font-basic;
+    font-size: $F-size-under;
+  }
+  &__people &__people-info {
+    display: inline-block;
+    vertical-align: top;
+    color: $C-font-basic;
+    font-size: $F-size-under;
+  }
+  &__people-box &__people-info {
+    color: #242424;
+    font-size: $F-size-under;
+    line-height: 1.5;
+    strong {
+      font-size: 1.5rem;
+      font-weight: $F-weight-bold;
+    }
+
+  }
+}
+.science_cont4 {
+  background:url(../images/repeat_bg.png) repeat 0 0;
+  //height: 865px;
+  @include clear();
+  padding-bottom: 50px;
+  &__area {
+    width: 100%;
+    margin: 0 auto;
+    @include clear();
+  }
+  &__stit {
+    padding: 30px 0 0 25px;
+    position: relative;
+    font-family: $F-family-en2;
+    font-weight: $F-weight-bold;
+    font-size: $F-size-under;
+    color: #818e9f;
+
+    @extend .subtitlebar;
+
+  }
+
+  &__team {
+    padding: 0 0 0;
+  }
+  &__team-list {
+
+    @include clear;
+  }
+  &__team-item {
+    float:left;
+    width: 50%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  &__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+    img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  &__name {
+    padding-top: 15px;
+    font-size: $F-size-under;
+    color: #242424;
+    font-family: $F-family-semibold;
+  }
+  &__desc {
+    padding-top: 5px;
+    font-size: 1.2rem;
+    color: #010101;
+  }
+  &__desc2 {
+    display: block;
+    text-align: center;
+    &:before {
+      content:'';
+      display: inline-block;
+      vertical-align: top;
+      margin: 25px 0;
+      width: 42px;
+      height: 2px;
+      background: #979797;
+    }
+
+
+  }
+  &__desc-txt {
+    font-size: 1.2rem;
+    color: $C-font-basic;
+    text-align: left;
+    padding: 0 5px 0 15px;
+  }
+}

@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.title {
+  padding: 20px 0;
+  .heading_h1 {
+    font-size: 3.0rem;
+    font-weight: $F-weight-bold;
+  }
+  .heading_h3 {
+    font-size: 1.6rem;
+    font-weight: $F-weight-bold;
+    color: $C-font-dark;
+  }
+
+}
+.title_wrap {
+  border-bottom: 2px solid #333;
+  padding-bottom: 12px;
+  @include clear();
+  .heading_h1 {
+    font-size: 1.9rem;
+    color: $C-font-dark;
+    font-weight: $F-weight-bold;
+    letter-spacing: -1px;
+  }
+  .heading_h2 {
+    float: left;
+    font-size: 1.5rem;
+    color: $C-font-dark;
+  }
+  .heading_btn {
+    float:right;
+  }
+  .heading_sub {
+    margin: 5px 0 0 3px;
+    color: $C-font-basic;
+    font-size: $F-size-under;
+    font-weight: $F-weight-regular;
+
+  }
+}
+.box_tit {
+  background: #f5f6f6;
+  overflow: hidden;
+  .heading_h3 {
+    font-size: $F-size-under;
+    font-weight: $F-weight-bold;
+    color: $C-font-dark;
+    margin: 17px 25px 0;
+    border: 1px solid #ddd;
+    border-width: 1px 0;
+    padding: 10px 0;
+  }
+}
+.modal_title {
+  border-bottom: 2px solid $C-black;
+  padding-bottom: 20px;
+  .heading_h3 {
+    font-size: 2.4rem;
+    font-weight: $F-weight-bold;
+    color: $C-font-dark;
+
+  }
+}
