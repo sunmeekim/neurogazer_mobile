@@ -31,7 +31,7 @@ html_build
 dist/admin.app.js
 .map
 
-markup/html/
-markup/img/
-markup/sass/
+# markup/html/
+# markup/img/
+# markup/sass/
 Gruntfile.js
