@@ -567,6 +567,10 @@ i, cite, em, var, address, dfn {
   background: #f6f6f8;
 }
 
+.wrap.black {
+  background-color: #000;
+}
+
 .header {
   position: relative;
   width: 100%;
@@ -1347,6 +1351,34 @@ i, cite, em, var, address, dfn {
   padding: 20px 0;
 }
 
+.btn__modal-ok {
+  display: block;
+  height: 59px;
+  background: #3779de;
+  text-align: center;
+  line-height: 59px;
+  font-size: 1.9rem;
+  color: #fff;
+}
+
+.btn__modal-btn {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 59px;
+  font-size: 1.5rem;
+}
+
+.btn__modal-btn.yes {
+  background: #3779de;
+  color: #fff;
+}
+
+.btn__modal-btn.no {
+  background: #D8D8D8;
+  color: #242424;
+}
+
 .btn_study_apply {
   display: inline-block;
   vertical-align: top;
@@ -1866,15 +1898,76 @@ i, cite, em, var, address, dfn {
 
 .modal {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 20px;
+  right: 20px;
+  top: 100px;
   background: #fff;
-  border: 1px solid #d1d7e1;
-  padding: 70px 75px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .modal__body {
   margin: 20px 0;
+}
+
+.modal__head {
+  height: 59px;
+  border-bottom: 1px solid #E4E4E4;
+}
+
+.modal__head-tit {
+  font-size: 1.9rem;
+  line-height: 59px;
+  padding-left: 20px;
+}
+
+.modal__cont-box {
+  margin: 0 20px;
+}
+
+.modal__cont-tit {
+  text-align: center;
+  color: #242424;
+  font-family: HelveticaNeue-SemiBold, AppleSDGothicNeo-SemiBold, sans-serif !important;
+  font-size: 2.1rem;
+}
+
+.modal__cont-txt {
+  text-align: center;
+  color: #242424;
+  font-size: 1.5rem;
+  margin-top: 8px;
+}
+
+.modal__cont-title {
+  color: #242424;
+  font-size: 1.7rem;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.modal__cont-desc {
+  padding: 8px 0 15px;
+  letter-spacing: -1px;
+  font-size: 1.5rem;
+  color: #888;
+  text-align: center;
+}
+
+.modal__cont-summary {
+  padding-top: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #B3B3B3;
+  letter-spacing: -1px;
+}
+
+.modal .modal__cont-box + .modal__cont-box {
+  border-top: 1px solid #E8E6E6;
+}
+
+.modal__foot {
+  height: 59px;
 }
 
 /* import */
@@ -3182,6 +3275,27 @@ i, cite, em, var, address, dfn {
   font-family: "Open Sans", sans-serif !important;
 }
 
+.clause_wrap + .clause_wrap {
+  margin-top: 40px;
+}
+
+.clause_wrap .clause__tit {
+  font-size: 1.5rem;
+  color: #242424;
+}
+
+.clause_wrap .clause__explanation {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  color: #888;
+  line-height: 1.5;
+}
+
+.clause_wrap .clause__lst {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
 .login_wrap {
   margin: 10px 25px 0;
   text-align: center;
@@ -4173,6 +4287,45 @@ label.error {
 .study__agree-box .form__label {
   padding: 10px;
   font-size: 1.5rem !important;
+}
+
+.study__intro {
+  position: relative;
+  margin: -50px 0;
+  min-height: 100%;
+  background: url(../images/studyintro_bg.png) no-repeat 0 0;
+  background-size: cover;
+  padding: 50px 30px;
+}
+
+.study__intro-tit {
+  font-size: 1.7rem;
+  color: #3F83BA;
+}
+
+.study__intro-head {
+  margin-top: 20px;
+  font-size: 5.0rem;
+  color: #fff;
+  letter-spacing: -1px;
+  line-height: 1.1;
+}
+
+.study__intro-head strong {
+  font-weight: 700;
+}
+
+.study__intro-stit {
+  margin-top: 20px;
+  font-size: 1.7rem;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.study__intro-summary {
+  margin: 50px 0 150px;
+  color: #B4AEAE;
+  font-size: 1.3rem;
 }
 
 .study .form__check-wrap {

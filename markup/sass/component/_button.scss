@@ -59,6 +59,31 @@
     font-size:1.6rem !important;
     padding: 20px 0 ;
   }
+  &__modal-ok {
+    display: block;
+    height: 59px;
+    background: $C-brand-point;
+    text-align: center;
+    line-height: 59px;
+    font-size: 1.9rem;
+    color: $C-white;
+  }
+  &__modal-btn {
+    float:left;
+    width: 50%;
+    text-align: center;
+    line-height: 59px;
+    font-size: 1.5rem;
+
+    &.yes {
+      background: $C-brand-point;
+      color: $C-white;
+    }
+    &.no {
+      background: #D8D8D8;
+      color: $C-font-dark;
+    }
+  }
 }
 
 .btn_study_apply {

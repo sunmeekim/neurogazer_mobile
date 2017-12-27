@@ -1,9 +1,6 @@
 @charset "UTF-8";
 .agree_box {
-  border-top: 2px solid $C-black;
-  box-shadow: 0 0 1px 0 rgba(0,0,0,.01);
-  padding: 40px 60px;
-  background: $C-white;
+
 
 }
 .clause_wrap {
@@ -12,15 +9,14 @@
   }
   .clause {
     &__tit {
-      font-size: $F-size-big;
-      font-weight: $F-weight-bold;
+      font-size: 1.5rem;
       color: $C-font-dark;
     }
     &__explanation {
       margin-top: 20px;
       font-size: $F-size-under;
       color: $C-font-basic;
-      line-height: 1.8;
+      line-height: 1.5;
     }
     &__lst {
       list-style-type:square;
