@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.progress {
+  border-top: 1px solid #eff5f5;
+  padding: 0 25px;
+  &__desc {
+    margin-top: -20px;
+    text-align: center;
+    color: $C-font-basic;
+  }
+  &__box {
+    background: $C-white;
+    margin-top: 20px;
+  }
+  &__peo-info {
+    padding: 15px;
+    font-size: 1.5rem;
+    color: $C-font-dark;
+    font-family: $F-family-semibold;
+    border-bottom: 1px solid #A9A9A9;
+    strong {
+      color: $C-brand-point;
+    }
+  }
+  &__box-info {
+    padding: 15px 0;
+    @include clear();
+  }
+  &__attend {
+    clear: both;
+    font-size: $F-size-small;
+    text-align: right;
+    padding: 5px 25px 0 0;
+    color: $C-red-point;
+    margin-bottom: -5px;
+  }
+  .progress__box-info + .progress__box-info {
+    border-top: 1px solid #ddd;
+  }
+  &__th {
+    display: block;
+    padding-left:15px;
+    color: #A1A1A1;
+    font-size:1.5rem;
+  }
+  &__td {
+    display: block;
+    text-align:right;
+    padding-right: 25px;
+    color: $C-font-dark;
+    font-size:1.5rem;
+    &.select {
+      position: relative;
+      padding-right: 35px;
+      &:after {
+        position: absolute;
+        right: 25px;
+        top: 10px;
+        z-index: 2;
+        @include use-sprite(ico_arrow_view);
+
+      }
+    }
+    .find__select {
+      width: 100%;
+      height: 26px;
+      border: 0;
+      border-radius: 3px;
+      background:#fff;
+      display: block;
+      text-align:right;
+      option {
+        display: block;
+        text-align: right;
+      }
+      &:focus {
+        border: 0;
+        color: $C-font-dark;
+        outline: 0;
+      }
+
+      &.error {
+        border: 0;
+      }
+
+    }
+  }
+  &__desc2 {
+    text-align: right;
+    color: $C-brand-point;
+    font-size: $F-size-under;
+    padding: 20px 0 10px;
+  }
+}
+.summary {
+
+  .sum_txt{
+    padding: 30px;
+    color: $C-font-basic;
+    font-size: $F-size-under;
+    line-height: 1.5;
+    p+p {
+      margin-top: 20px;
+    }
+    strong {
+      font-weight: $F-weight-bold;
+    }
+    span {
+      font-size: $F-size-small;
+    }
+  }
+
+}

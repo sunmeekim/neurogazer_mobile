@@ -10,9 +10,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta content="" name="description" />
     <meta content="" name="author" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
     <!-- end: META -->
-    <link rel="stylesheet" href="/../assets/css/neurogazer_m.css"/>
+    <link rel="stylesheet" href="../assets/css/neurogazer_m.css"/>
 
 </head>
 <!-- end: HEAD -->
@@ -35,7 +36,50 @@
 </div>
 
         <!-- //header_area -->
-
+        <!-- openMenu -->
+        <div class="lnb_wrap">
+            <div class="lnb col-md-10">
+                <div class="lnb__top">
+                    <h1 class="lnb__top-logo"></h1>
+                    <div class="lnb__top-desc">아직 연구참여를 하지 않으셨나요?</div>
+                    <div class="lnb__attend">
+                        <a href="#" class="lnb__attend-link">로그인</a>
+                        <a href="#" class="lnb__attend-link">연구참여</a>
+                    </div>
+                </div>
+                <div class="lnb__active">
+                    <a href="#faq" class="lnb__active-link col-md-4">
+                        <span class="faq">
+                            <em>1:1문의</em>
+                        </span>
+                    </a>
+                    <a href="#study" class="lnb__active-link col-md-4">
+                        <span class="study">
+                            <em>연구안내</em>
+                        </span>
+                    </a>
+                    <a href="#step" class="lnb__active-link col-md-4">
+                        <span class="step">
+                            <em>진행현황</em>
+                        </span>
+                    </a>
+                </div>
+                <div class="lnb__lst">
+                    <div class="lnb__lst-tit">
+                        <span class="lnb__lst-tit-txt">NEUROGAZER MENU</span>
+                    </div>
+                    <ul>
+                        <li class="lnb__lst-item"><a href="#about" class="lnb__lst-link">ABOUT US</a></li>
+                        <li class="lnb__lst-item"><a href="#service" class="lnb__lst-link">SERVICE</a></li>
+                        <li class="lnb__lst-item"><a href="#science" class="lnb__lst-link">SCIENCE</a></li>
+                        <li class="lnb__lst-item"><a href="#contactus" class="lnb__lst-link">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="lnb_close">닫기</a>
+            <div class="lnb_shadow"></div>
+        </div>
+        <!-- //openMenu -->
         <!-- container_area -->
         <div class="container">
 
@@ -66,5 +110,18 @@
 </div>
         <!-- //footer_area -->
     </div>
+<script>
+    $(function() {
+        $('.lnb_close').on("click", function () {
+
+            $('.lnb_wrap').hide();
+
+        });
+
+        $('.menu').on("click", function () {
+            $('.lnb_wrap').show();
+        });
+    });
+</script>
 </body>
 </html>

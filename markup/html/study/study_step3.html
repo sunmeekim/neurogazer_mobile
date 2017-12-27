@@ -1,0 +1,135 @@
+@@include('head.html', {"css": "neurogazer", "title": "NEUROGAZER(home) : 연구참여_step2:연구참여","filePath": "../"})
+<body>
+<div class="wrap login">
+    <!-- header_area -->
+    <!--@@include('top.html')-->
+    <!-- //header_area -->
+    <div class="member_heading">
+        <a href="#" class="link">연구등록</a>
+    </div>
+    <!-- container_area -->
+    <div class="container">
+        <div class="contents" style="margin-top: -30px">
+            <div class="study_wrap">
+
+
+                <div class="study">
+                    <div class="study__box">
+                        <div class="title_wrap">
+                            <h2 class="heading_h1">참여대상자 <span class="heading_sub">연구참여 대상자 정보를 입력하세요.</span></h2>
+                        </div>
+                        <!-- 기본참가자 영역 -->
+                        <div class="study__info">
+                            <!-- 참가자정보입력영역 -->
+                            <!-- [D] 이름 입력 -->
+                            <div class="form-group mt10">
+                                <label class="form-sgroup">
+                                    <!--<p class="form__label">이름 <span class="required">(필수)</span></p>-->
+                                    <span class="form-inline col-md-12"><input type="text" class="form__input" placeholder="이름"/></span>
+                                </label>
+                            </div>
+                            <!-- [D] 생년월일 입력 -->
+                            <div class="form-group mt10">
+                                <label class="form-sgroup">
+                                    <!--<p class="form__label">생년월일 <span class="required">(필수)</span></p>-->
+                                    <span class="form-inline col-md-12"><input type="text" class="form__input" placeholder="예 : 090202"/></span>
+                                </label>
+
+                            </div>
+                            <!-- [D] 예약자와의관계 입력 -->
+                            <div class="form-group study__info-div">
+                                <div class="form-sgroup col-md-12">
+                                    <div>
+                                        <span class="form__label">예약자와의 관계</span>
+                                    </div>
+
+                                    <span class="form-inline select  col-md-5">
+                                        <select  class="form__select">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+
+                                    <span class="form-inline select  col-md-6">
+                                        <select  class="form__select">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- //참가자정보입력영역 -->
+                            <div class="study__apply-plus">
+                                <a href="#" class="btn_apply-plus">검사 대상자 추가</a>
+                            </div>
+                        </div>
+                        <!-- //기본참가자 영역 -->
+
+                        <!-- 추가참가자 영역 -->
+                        <div class="study__info line">
+                            <!-- 추가참가자정보입력영역 -->
+                            <div class="study__info-title title_wrap">
+                                <h3 class="heading_h2">추가 대상자 1</h3>
+                                <!-- 추가참가자 삭제버튼 -->
+                                <span class="heading_btn"><a href="#del" class="btn_delete"><span class="g_invisible">닫기</span></a></span>
+                            </div>
+                            <div class="form-group mt10">
+                                <label class="form-sgroup">
+                                    <!--<p class="form__label">이름 <span class="required">(필수)</span></p>-->
+                                    <span class="form-inline col-md-12"><input type="text" class="form__input" placeholder="이름"/></span>
+                                </label>
+                            </div>
+                            <!-- [D] 생년월일 입력 -->
+                            <div class="form-group mt10">
+                                <label class="form-sgroup">
+                                    <!--<p class="form__label">생년월일 <span class="required">(필수)</span></p>-->
+                                    <span class="form-inline col-md-12"><input type="text" class="form__input" placeholder="예 : 090202"/></span>
+                                </label>
+
+                            </div>
+
+                            <div class="form-group study__info-div">
+                                <div class="form-sgroup col-md-12">
+                                    <div>
+                                        <span class="form__label">예약자와의 관계</span>
+                                    </div>
+
+                                    <span class="form-inline select  col-md-5">
+                                        <select  class="form__select">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+
+                                    <span class="form-inline right select  col-md-6">
+                                        <select  class="form__select">
+                                            <option>선택하세요</option>
+                                        </select>
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- //추가참가자정보입력영역 -->
+
+                        </div>
+                        <!-- //추가참가자 영역 -->
+
+                    </div>
+                </div>
+
+                <!-- 취소/확인 버튼영역 -->
+                <div class="btn_wrap al_c">
+                    <input class="btn btn-cancel col-md-5" type="button" value="취소">
+                    <input class="btn btn-primary col-md-5" type="submit" value="확인">
+                </div>
+                <!-- //취소/확인 버튼영역 -->
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- //container_area -->
+
+    <!-- footer_area -->
+    @@include('footer.html')
+    <!-- //footer_area -->
+</div>
+</body>
+</html>
