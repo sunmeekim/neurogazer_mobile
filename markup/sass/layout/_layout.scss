@@ -9,7 +9,9 @@
   &.login {
     background: $C-cont-bg;
   }
-
+  &.black {
+    background-color: $C-black;
+  }
 }
 .header {
   position: relative;

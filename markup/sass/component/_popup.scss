@@ -11,14 +11,69 @@
 }
 .modal {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 20px;
+  right: 20px;
+  top:100px;
   background: $C-white;
-  border: 1px solid #d1d7e1;
-  padding: 70px 75px;
-
+  border-radius: 4px;
+  overflow:hidden;
   &__body {
     margin: 20px 0;
   }
+  &__head {
+    height: 59px;
+    border-bottom: 1px solid #E4E4E4;
+  }
+  &__head-tit {
+    font-size:1.9rem;
+    line-height: 59px;
+    padding-left: 20px;
+  }
+  &__cont {
+    //padding: 15px 0;
+  }
+  &__cont-box {
+    margin: 0 20px;
+  }
+  &__cont-tit {
+    text-align: center;
+    color: $C-font-dark;
+    font-family: $F-family-semibold;
+    font-size: 2.1rem;
+  }
+  &__cont-txt {
+    text-align: center;
+    color: $C-font-dark;
+    font-size: 1.5rem;
+    margin-top: 8px;
+  }
+  &__cont-box {
 
+  }
+  &__cont-title {
+    color: $C-font-dark;
+    font-size: $F-size-xbig;
+    text-align: center;
+    padding-top: 10px;
+  }
+  &__cont-desc {
+    padding: 8px 0 15px;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+    color: $C-font-basic;
+    text-align: center;
+  }
+  &__cont-summary {
+    padding-top: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #B3B3B3;
+    letter-spacing: -1px;
+  }
+  .modal__cont-box + .modal__cont-box {
+    border-top: 1px solid #E8E6E6;
+  }
+  &__foot {
+    height:59px;
+  }
 }

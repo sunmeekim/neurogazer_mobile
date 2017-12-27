@@ -22,24 +22,16 @@
 }
 
 .study {
-  //background: $C-white;
   padding: 0 0 30px;
   @include clear();
   &__topdesc {
     margin: -30px 25px 20px;
     color: $C-font-basic;
     font-size: $F-size-under;
-
   }
-  //&__agreement {
-  //  border-bottom: 1px solid #ccc;
-  //  padding-bottom: 40px;
-  //  margin-bottom: 50px;
-  //}
   &__box {
     margin: 0;
   }
-
   &__label-desc {
     padding-left: 35px;
     padding-top: 5px;
@@ -56,11 +48,7 @@
     }
 
   }
-
   &__info-div {
-    //border: 1px solid #ccc;
-    //border-width: 1px 0;
-    //margin-top: 25px;
     padding:0;
     .form__label {
       padding-top: 15px;
@@ -73,7 +61,6 @@
   }
   &__info-title {
     @include clear();
-    //margin-top: -10px;
     border-top: 2px solid $C-font-dark;
     border-bottom: 1px solid #d5dcdc;
     padding: 12px 0;
@@ -91,7 +78,6 @@
     font-size: 2.1rem;
     color: $C-font-dark;
     font-family: $F-family-semibold;
-
   }
   &__applyend-message2 {
     margin-top: 15px;
@@ -111,6 +97,39 @@
       padding: 10px;
       font-size: 1.5rem !important;
     }
+  }
+  &__intro {
+    position: relative;
+    margin: -50px 0;
+    min-height: 100%;
+    background:url(../images/studyintro_bg.png) no-repeat 0 0;
+    background-size: cover;
+    padding: 50px 30px;
+  }
+  &__intro-tit {
+    font-size: $F-size-xbig;
+    color: #3F83BA;
+  }
+  &__intro-head {
+    margin-top: 20px;
+    font-size: 5.0rem;
+    color: $C-white;
+    letter-spacing: -1px;
+    line-height: 1.1;
+    strong {
+      font-weight: $F-weight-bold;
+    }
+  }
+  &__intro-stit {
+    margin-top: 20px;
+    font-size: $F-size-xbig;
+    color: $C-white;
+    letter-spacing: -1px;
+  }
+  &__intro-summary {
+    margin: 50px 0 150px;
+    color: #B4AEAE;
+    font-size: $F-size-under;
   }
   .form__check-wrap {
     padding-bottom: 20px;
