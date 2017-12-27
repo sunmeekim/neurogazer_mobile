@@ -4,6 +4,7 @@
   min-height:$G-contents-fit;
   position: relative;
   padding-bottom: 205px;
+  overflow: hidden;
   &.other,
   &.login {
     background: $C-cont-bg;
@@ -37,6 +38,164 @@
   .apply {
     float:right;
     margin: 15px 15px 0 0;
+  }
+}
+.lnb_wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left:  0;
+  z-index: 100;
+
+  .lnb_shadow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left:  0;
+    background-color:rgba(0,0,0,.5);
+    width: 100%;
+    height:100%;
+    z-index: 101;
+  }
+  .lnb {
+    position:relative;
+    z-index: 102;
+    background: $C-white;
+    height: 100%;
+    &__top {
+      position: relative;
+      height: 196px;
+      text-align: center;
+      background: #2a88d2;
+      //background: -webkit-linear-gradient(top, #2a88d2 0%,#1359c5 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #2a88d2 0%,#1359c5 100%);
+    }
+    &__top-logo {
+      @include use-sprite(logo_white);
+      margin: 50px auto 0;
+    }
+    &__top-desc {
+      text-align: center;
+      color: $C-white;
+      font-size: $F-size-under;
+    }
+    &__attend {
+      height:42px;
+      background: $C-brand-point;
+      position:absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+    &__attend-link {
+      position: relative;
+      float:left;
+      width: 50%;
+      line-height: 42px;
+      color: $C-white;
+      text-align: center;
+
+
+    }
+    .lnb__attend-link+ .lnb__attend-link {
+      &:before {
+        content:'';
+        position: absolute;
+        left:0;
+        top: 16px;
+        display: inline-block;
+        vertical-align: top;
+        width: 1px;
+        height: 11px;
+        background:$C-white;
+      }
+    }
+    &__active {
+      @include clear();
+    }
+    &__active-link {
+      position: relative;
+      float:left;
+      text-align: center;
+      padding: 18px 0;
+      span {
+        color: $C-font-basic;
+        font-size: $F-size-under;
+
+      }
+      .faq {
+        &:before {
+          @include use-sprite(ico_tel);
+        }
+        em {
+          display: block;
+        }
+      }
+      .study {
+        &:before {
+          @include use-sprite(ico_brain);
+        }
+        em {
+          display: block;
+        }
+      }
+      .step {
+        &:before {
+          @include use-sprite(ico_peo);
+        }
+        em {
+          display: block;
+        }
+      }
+    }
+    .lnb__active-link + .lnb__active-link {
+      &:before {
+        content:'';
+        position:absolute;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        vertical-align: top;
+        width:1px;
+        min-height: 80px;
+        background: #E4E4E4;
+
+      }
+    }
+    &__lst-tit {
+      background: #F2F2F2;
+      height: 40px;
+
+    }
+    &__lst-tit-txt {
+      padding: 0 0 0 20px;
+      color: #ABABAB;
+      font-size: $F-size-under;
+      line-height: 40px;
+    }
+    &__lst-item {
+      border-bottom: 1px solid #E8E8E8;
+    }
+    &__lst-link {
+      display: block;
+      padding: 15px 0 8px 15px;
+      color: $C-font-basic;
+      font-size: $F-size-xbig;
+      &.active,
+      &:focus {
+        color: $C-font-dark;
+      }
+    }
+
+  }
+  .lnb_close {
+    position: absolute;
+    z-index: 102;
+    right: 20px;
+    top:20px;
+    @include use-sprite(ico_close2);
   }
 }
 .contents {
